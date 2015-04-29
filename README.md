@@ -9,7 +9,7 @@ THERE IS NO GUARANTEE THAT I WILL MAINTAIN OR FIX ANY ISSUES
 
 I've got plenty of intention of doing so, but time and other interests usually work against me.
 
-What you'll find so far in toolboxes (folder):
+What you'll find so far in toolboxes:
 * General Data Management Tools.tbx
     * Delete Domains By Type
 
@@ -18,9 +18,15 @@ What you'll find so far in toolboxes (folder):
 measured as the line's path length divided by the distance between the start
 point and endpoint.
 
-* layers (folder): contains output .lyr files for the tools.
-
-* scripts (folder): contains the script files used in the toolboxes.
+* MBR (Minimum Bounding Rectangle) Tools
+I stole [these tools](http://blogs.esri.com/esri/arcgis/2008/03/21/selecting-polygons-for-maps-at-smaller-scales/) from [Charlie Frye](http://blogs.esri.com/esri/arcgis/author/cfrye/),
+Esri's Chief Cartographer, for a project. Well not exactly stole, but borrowed and modified. Charlie shows some really slick ways of
+describing polygons by their shape.
+    * Minimum Bounding Rectangle Polygon Analyzer: Adds fields that describe a polygon shape's relationship to its minimum bounding
+    rectangle. The contents of these fields supports queries for determining how to label these features and for how to select these
+    features for generalization.
+    * Minimum Bounding Rectangle Polygon: Creates a new polygon dataset containing a minimum bounding rectangle for each of the polygon
+    features in the input dataset. Ideally the shapes should be single part.
     
 
 ## Instructions
@@ -32,4 +38,4 @@ point and endpoint.
 ## Requirements
 * These tools run in ArcGIS Desktop 10.3 and up.
 * Python 2.7
-* The tool's .py file can be modified in a text editor or any Python IDE
+* The tool's .py file can be modified in a text editor (e.g. Notepad++) or any Python IDE (e.g. Komodo)
