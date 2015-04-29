@@ -21,7 +21,8 @@ point and endpoint.
 * MBR (Minimum Bounding Rectangle) Tools
 I stole [these tools](http://blogs.esri.com/esri/arcgis/2008/03/21/selecting-polygons-for-maps-at-smaller-scales/) from [Charlie Frye](http://blogs.esri.com/esri/arcgis/author/cfrye/),
 Esri's Chief Cartographer, for a project. Well not exactly stole, but borrowed and modified. Charlie shows some really slick ways of
-describing polygons by their shape.
+describing polygons by their shape. I cannot take any credit for these tools, that goes to Charlie. My modifications were to take his
+tools and put them into a Python Toolbox (PYT).
     * Minimum Bounding Rectangle Polygon Analyzer: Adds fields that describe a polygon shape's relationship to its minimum bounding
     rectangle. The contents of these fields supports queries for determining how to label these features and for how to select these
     features for generalization.
